@@ -31,12 +31,12 @@ function setup() {
 
 function draw() {
 	background(0);
-	image(video, 0, 0,width/3,height/2);
-	image(img,width-width/3,0,width/3,height/2);
+	image(video, 0, 0,width/3,2*height/3);
+	image(img,width-width/3,0,width/3,2*height/3);
 	textSize(32);
 	textAlign(CENTER,CENTER);
 	fill(255);
-	text(label,width/3,height/2);
+	text(label,width/3,2*height/3);
 	if((score==="rock" && label==="paper")||(score==="paper" && label==="scissor") || (score==="scissor" && label==="rock")){
 		textSize(32);
 	textAlign(CENTER,CENTER);
